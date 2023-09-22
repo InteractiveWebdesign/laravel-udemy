@@ -1,12 +1,17 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('Projects') }}
         </h2>
     </x-slot>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="flex justify-end m-2 p-2">
+                <a href="{{ route('projects.create') }}" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                    New Project
+                </a>
+            </div>
 
             <div class="overflow-x-auto relative shadow-md sm:rounded-lg" bis_skin_checked="1">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
