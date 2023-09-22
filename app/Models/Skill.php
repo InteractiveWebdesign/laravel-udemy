@@ -13,4 +13,9 @@ class Skill extends Model
         'name',
         'image'
     ];
+
+    public function projects()
+    {
+        return $this->hasMany(Project::class);
+    }
 }
