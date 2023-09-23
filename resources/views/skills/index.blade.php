@@ -33,8 +33,8 @@
                             {{ $skill->name }}
                             
                         </th>
-                        <td class="px-6 py-4">
-                            Image
+                        <td class="py-4 px-6">
+                            <img src="{{ asset('storage/' . $skill->image) }}" class="w-12 h-12" />
                         </td>
                         <td class="px-6 py-4">
                             <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>

@@ -7,7 +7,8 @@
 
     <div class="py-12">
         <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white shadow-md rounded-md">
-            <form method="POST" action="{{ route('login') }}" class="p-4" enctype="multipart/form-data">
+            <x-auth-validation-errors class="mb-4" :errors="$errors" />
+            <form method="POST" action="{{ route('skills.store') }}" class="p-4" enctype="multipart/form-data">
                 @csrf
     
                 <!-- Name -->
